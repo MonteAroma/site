@@ -1,0 +1,114 @@
+*{
+    font-family: 'Montserrat Alternates', sans-serif;
+    
+}
+
+body {
+    max-width: 1500px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: #f1f1f1f1;
+}
+
+.title {
+    color: #444;
+    font-size: 48px;
+}
+
+.green {
+    color: #899F3B;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    background: #161B21;
+    padding: 20px;
+    text-align: left;
+    padding-top: 25%;
+}
+
+#Saulo {
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+.sidebar h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #f1f1f1f1;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.sidebar ul li a:hover{
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 27%;
+}
+
+.Pinicial{
+    height: 500px;
+    margin-top: 250px;
+}
+
+#Lhoja {
+    position: absolute;
+    left: 15%;
+    top: 8%;
+}
+
+.Sbutons {
+    padding: 0%;
+    margin: 0%;
+    font-size: 28px;
+    display: flex;
+}
+
+.Sbutons a {
+    background-color: #161B21;
+    color: white;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.Sbutons a:hover {
+    transform: scale(1.2);
+    background-color: #899F3B;
+}

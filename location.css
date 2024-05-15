@@ -1,0 +1,13 @@
+
+body{
+    font-family:'Gill Sans';
+}
+
+.container{
+    position: absolute;
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 1600px;
+    height: 100%;
+    left: 320px;
+}   

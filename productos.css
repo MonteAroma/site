@@ -1,0 +1,179 @@
+body {
+    background: #f1f1f1;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 0%;
+}
+
+.seccionDeProductos {
+    min-width: 1300px;
+    height: 500px;
+    margin-left: 450px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.conjuntos {
+    width: 350px;
+    height: 400px;
+    background-color: #c6ddcf;
+    border: 1px solid rgb(218, 209, 209);
+    border-radius: 3px;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+.conjuntos img {
+    background-color: #f1f1f1;
+    color: white;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
+    box-shadow: 0px 2px 5px 4px #444;
+}
+
+
+.VerProductos {
+    width: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* Secciones*/
+
+
+.sectionAromatica, .sectionCondimentos, .sectionAceitesE, .sectionAceitesM {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#conjunto1, #conjunto2, #conjunto3, #conjunto4 {
+    transition: transform 0.5s ease-in-out; 
+}
+
+
+
+#conjunto1:hover, 
+#conjunto2:hover,
+#conjunto3:hover,
+#conjunto4:hover {
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(10, 9, 9, 0.767);
+    transform: translateY(20px); 
+}
+
+.BverMas{
+    padding: 5px;
+    width: 200px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+    transition: all .5s;
+}
+
+.BverMas:hover{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
+
+/* Modales */
+
+.modales{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 1600px;
+    height: 100%;
+    left: 320px;
+    font-family: sans-serif;
+}
+
+.tarjeta {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 40px;
+    border-radius: 5px;
+    perspective: 1000px; /* Agregado para la perspectiva */
+    cursor: pointer;
+    float: left;
+}
+
+.tarjeta .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: 1.5s;
+}
+
+.tarjeta .front {
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    background-color: #161B21;
+
+}
+
+.tarjeta .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    background: rgba(224, 216, 216, 0.4);
+    margin: 0;
+}
+
+.tarjeta .front img {
+    object-fit: cover;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.tarjeta .back {
+    transform: rotateY(180deg);
+    background-color: #161B21;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.tarjeta:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.tarjeta:hover .back {
+    transform: rotateY(0deg);
+}
+
+
+.modal-Aromaticas a{
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
