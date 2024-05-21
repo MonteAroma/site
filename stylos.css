@@ -28,7 +28,7 @@ body {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 280px;
+    width: 240px;
     background: #161B21;
     padding: 20px;
     text-align: left;
@@ -36,10 +36,10 @@ body {
 }
 
 #Saulo {
-    width: 200px;
+    width: 180px;
     position: absolute;
-    top: 15%;
-    left: 20%;
+    top: 12%;
+    left: 17%;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
 
@@ -67,23 +67,21 @@ body {
 
 }
 
-.sidebar ul li a:hover{
-    text-decoration: underline;
-}
 
 .content {
     margin-left: 27%;
 }
 
 .Pinicial{
-    height: 500px;
-    margin-top: 250px;
+    height: 300px;
+    margin-top: 80px;
 }
 
 #Lhoja {
     position: absolute;
-    left: 15%;
-    top: 8%;
+    left: 20%;
+    top: 0%;
+    width: 360px;
 }
 
 .Sbutons {
@@ -112,3 +110,4 @@ body {
     transform: scale(1.2);
     background-color: #899F3B;
 }
+
